@@ -1,6 +1,5 @@
 package com.postgram.controller;
 
-import com.postgram.models.BlogModel;
 import com.postgram.models.CategoryModel;
 import com.postgram.services.CategoryService;
 import lombok.AllArgsConstructor;
@@ -32,7 +31,6 @@ public class CategoryController {
     {
         service.create(categoryModel);
     }
-
 
     @PutMapping("/:{id}")
     public void update(@PathVariable Integer id, @RequestBody CategoryModel categoryModel) {
